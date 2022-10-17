@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="static/teamlead.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Team-lead-Projects-page</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="static/images/ProjMan.png" alt="">
+            </div>
+
+            <!-- <span class="logo_name">ProjMan</span>/ <span>Teams</span> </p> -->
+            <a href="index,html"> <span class="logo_name">ProgMan</span>/</a> <span>TeamsProj</span> </p>
+
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <!-- <li><button>
+                    <span class="link-name">+ Add Team</span></button>
+                    
+                </li> -->
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Projects</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Tasks</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Student</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Comments</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Files</span>
+                </a></li>
+                <!-- <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li> -->
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="static/images/dummy-profile-pic.png" alt="">
+        </div>
+        <section class="home-section">
+
+        <div class="table_header">
+                <p>Project details</p>
+                <!-- <div>
+                    <input type="text" placeholder="project">
+                    <button class="add new"> + Add New task</button>
+                </div> -->
+        </div>
+        <div class="header_fixed">
+            <table>
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td><input type="text" id="new_subtask" placeholder="taskname"></td>
+                            <td><input type="text" id="new_description" placeholder="description"></td>
+                            <td><input type="text" id="new_status" placeholder="status"></td>
+                            <td><input type="text" id="new_assignedto" placeholder="assignedto"></td>
+        
+                            <td><input type="button" class="add"  id="add_task" value="+ Add Task"></td>
+                        </tr>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+        <div class="header_fixed">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sub-Task ID</th>
+                        <th>Sub-Task name</th>
+                        <th>Sub-Description</th>
+                        <th>Status</th>
+                        <th>Assigned to..</th>
+                        <th>Assigned to..</th>
+                        <th>Due Date</th>
+
+                        <th>options</th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="teamleadsubtasks"></tbody>
+                </table>
+        </div>
+    </section> 
+        
+    </section>
+
+    <script src="js/teamlead.js" type="module"></script>
+</body>
+</html>

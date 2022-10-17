@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin</title>
+
+    <link rel="stylesheet" type="text/css" href="static/style.css"/>      
+    <script src="js/admin.js" type="module"></script>
+
+</head>
+<body>
+
+
+    <!-- header section starts  -->
+
+    <!-- <include src="._header.html"></include> -->
+
+<!-- header section ends  -->
+
+
+ 
+
+<!-- header end -->
+<!-- </section> -->
+<!-- nav start -->
+<div class="nav-overlay"></div>
+<nav class="nav">
+    <div class="head">
+    <strong>Projects</strong>|<span> 
+    <!-- <input type="button" class="add"  id="add_project" value="+ Add Project"> -->
+    <div class="close">&times;</div>
+</div>
+    <ul>
+        <li><a href="admindashboard.html">admindashboard</a></li>
+
+        <li><a href="#">Project1</a></li>
+        <li><a href="#">Project2</a></li>
+        <li><a href="#">Project3</a></li>
+        <li><a href="#">Project4</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#">Overview</a></li>
+    </ul>
+</nav>
+<!-- nav end -->
+<!-- home section start -->
+<section class="home-section">
+    <div class="header">
+        <a href="#default" class="logo">ProgMan|Projects</a>
+        <div class="header-right">
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+          <!-- <a class="active" href="#home">Home</a>
+          <a href="#">Logout</a> -->
+        </div>
+    </div>
+    <div class="table_header">
+        <p>Project details</p>
+        <!-- <div>
+            <input type="text" placeholder="project">
+            <button class="add new"> + Add New task</button>
+        </div> -->
+    </div>
+    <div class="header_fixed">
+        <table>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="new_task" placeholder="taskname"></td>
+                    <td><input type="text" id="new_description" placeholder="description"></td>
+                    <td><input type="text" id="new_status" placeholder="status"></td>
+                    <td><input type="text" id="new_assignedto" placeholder="assignedto"></td>
+
+                    <td><input type="button" class="add"  id="add_task" value="+ Add Task"></td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+    <div class="header_fixed">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Task name</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Assigned to..</th>
+                    <th>options</th>
+                   
+                </tr>
+            </thead>
+            <tbody id="tasks"></tbody>
+            </table>
+    </div>
+               
+</section>
+<!-- home section end -->
+
+<footer>
+    <section class="credit">
+        Yunis | all rights reserved!
+    </section>
+</footer>
+
+<!-- <script src="app.js"></script> -->
+
+
+    
+      
+      <script>
+      
+      </script>
+    
+</body>
+    
+    
+    

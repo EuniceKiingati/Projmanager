@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="static/admindash.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="static/images/logo.png" alt="">
+            </div>
+            <a href="index,html"> <span class="logo_name">ProjMan</span>
+            </a> 
+            <!-- <span class="logo_name">ProjMan</span> -->
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="adminprojects.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Projects</span>
+                </a></li>
+                <li><a href="adminteams.html">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Teams</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Comments</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Files</span>
+                </a></li>
+                <!-- <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li> -->
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="static/images/dummy-profile-pic.png" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <!-- <i class="uil uil-thumbs-up"></i> -->
+                        <i class="uil uil-clipboard-notes"></i>
+
+                        <span class="text">Tasks</span>
+                        <span class="number" id="tasks-count">loading...</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Teams</span>
+                        <span class="number" id="teams-count">loading..</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Projects</span>
+                        <span class="number">6</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Yunis</span>
+                        <span class="data-list">Vic</span>
+                        <span class="data-list">Yunis</span>
+                        <span class="data-list">Ian</span>
+                        <span class="data-list">Trish</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Team</span>
+                        <span class="data-list">Cohort1</span>
+                        <span class="data-list">Cohort3</span>
+                        <span class="data-list">Cohort1</span>
+                        <span class="data-list">Cohort5</span>
+                        <span class="data-list">Cohort4</span>
+                       
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Project</span>
+                        <span class="data-list">POS</span>
+                        <span class="data-list">Project Manager</span>
+                        <span class="data-list">POS</span>
+                        <span class="data-list">Music App</span>
+                        <span class="data-list">Ecommerce website</span>
+                        
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Task</span>
+                        <span class="data-list">Data structures</span>
+                        <span class="data-list">Authentication</span>
+                        <span class="data-list">Data Structures</span>
+                        <span class="data-list">Music Upload</span>
+                        <span class="data-list">Add to Cart</span>
+                        
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">In Progress</span>
+                        <span class="data-list">Not Started</span>
+                        <span class="data-list">Complete</span>
+                        <span class="data-list">Not Started</span>
+                        <span class="data-list">Pending</span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/admindash.js"  type="module"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "project-mgt",
+  "version": "1.0.0",
+  "description": "first project",
+  "main": "app.js",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EuniceKiingati/projectmanager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EuniceKiingati/projectmanager/issues"
+  },
+  "homepage": "https://github.com/EuniceKiingati/projectmanager#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "firebase": "^9.9.4"
+  }
+}

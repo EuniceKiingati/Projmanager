@@ -1,0 +1,113 @@
+.headermain {
+    padding: 2rem 9%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #f6fbf6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+
+.header .logo {
+    font-size: 2.5rem;
+    color: #244d4d;
+    font-weight: bolder;
+  }
+  
+  .header .logo i {
+    padding-right: .3rem;
+  }
+  
+  .header .search-form {
+    height: 5rem;
+    width: 50rem;
+    border-radius: 5rem;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1rem solid #244d4d;
+  }
+  
+  .header .search-form input {
+    height: 100%;
+    width: 100%;
+    padding: 0 1.2rem;
+    font-size: 1.6rem;
+    color: #244d4d;
+    text-transform: none;
+  }
+  
+  .header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.7rem;
+    cursor: pointer;
+    color: #244d4d;
+  }
+  
+  .header .search-form label:hover {
+    color: #779;
+  }
+  
+  .header .icons div {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #244d4d;
+  }
+  
+  .header .icons div:hover {
+    color: #779;
+  }
+  
+  #search-btn {
+    display: none;
+  }
+  
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  #closer {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 5rem;
+    cursor: pointer;
+    z-index: 10000;
+    color: #244d4d;
+    -webkit-animation: rotate .4s linear .4s backwards;
+            animation: rotate .4s linear .4s backwards;
+    display: none;
+  }
+  
+  #closer:hover {
+    color: #779;
+  }

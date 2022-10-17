@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/studentstyle.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Student/Customer Page</title>
+  </head>
+  <body>
+<!-- navbar secction -->
+    <nav>
+      <div class="logo-name">
+          <div class="logo-image">
+              <img src="static/images/logo.png" alt="">
+          </div>
+          <a href="index,html"> <span class="logo_name">ProgMan</span>
+          </a> 
+          <!-- <span class="logo_name">ProjMan</span> -->
+      </div>
+
+      <div class="menu-items">
+          <ul class="nav-links">
+              <li><a href="#">
+                  <i class="uil uil-estate"></i>
+                  <span class="link-name">Dashboard</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-files-landscapes"></i>
+                  <span class="link-name">Projects</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-chart"></i>
+                  <span class="link-name">Teams</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-thumbs-up"></i>
+                  <span class="link-name">Comments</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-comments"></i>
+                  <span class="link-name">Files</span>
+              </a></li>
+              <!-- <li><a href="#">
+                  <i class="uil uil-share"></i>
+                  <span class="link-name">Share</span>
+              </a></li> -->
+          </ul>
+          
+          <ul class="logout-mode">
+              <li><a href="#">
+                  <i class="uil uil-signout"></i>
+                  <span class="link-name">Logout</span>
+              </a></li>
+
+              <li class="mode">
+                  <a href="#">
+                      <i class="uil uil-moon"></i>
+                  <span class="link-name">Dark Mode</span>
+              </a>
+
+              <div class="mode-toggle">
+                <span class="switch"></span>
+              </div>
+          </li>
+          </ul>
+      </div>
+  </nav>
+<!-- end of navbar -->
+<br>
+  <section class="dashboard">
+      <div class="top">
+          <i class="uil uil-bars sidebar-toggle"></i>
+
+          <!-- <div class="search-box">
+              <i class="uil uil-search"></i>
+              <input type="text" placeholder="Search here...">
+          </div> -->
+          
+          <img src="static/images/dummy-profile-pic.png" alt="">
+      </div>
+
+
+
+    <!-- modal -->
+    <div class="modal" id="todo_form">
+      <div class="modalheader">
+        <div class="title">Add Todo</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <div class="modalbody">
+        <input type="text" id="todo_input" />
+        <input type="submit" value="Add Todo" id="todo_submit" />
+      </div>
+    </div>
+    <!-- todo -->
+    <div class="todo-container">
+      <div class="status0" id="no_status">
+        <h1>No Status</h1>
+        <!-- <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button> -->
+        <div class="todo" draggable="true">
+          Research
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <div class="status1">
+        <h1>Not Started</h1>
+      </div>
+      <div class="status2">
+        <h1>In Progress</h1>
+      </div>
+      <div class="status3">
+        <h1>Completed</h1>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+  </section>
+    <!-- <script type="module" src="app.js"></script> -->
+    <script type="module" src="js/student.js"></script>
+
+  </body>
+</html>
