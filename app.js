@@ -87,6 +87,8 @@ loginwithgoogle2.addEventListener('click', (e) =>{
     // The AuthCredential type that was used.
     const credential = GoogleAuthProvider.credentialFromError(error);
     alert(errorMessage);
+    window.location.href = "index.html";
+
     // ...
   });
 });

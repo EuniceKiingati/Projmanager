@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="static/teamlead.css">
+    <link rel="stylesheet" href="static/addprojects.css">
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Team-lead-Projects-page</title> 
+    <title>Admin Products Page</title> 
 </head>
 <body>
     <nav>
@@ -22,7 +22,7 @@
             </div>
 
             <!-- <span class="logo_name">ProjMan</span>/ <span>Teams</span> </p> -->
-            <a href="index,html"> <span class="logo_name">ProgMan</span>/</a> <span>TeamsProj</span> </p>
+            <a href="index,html"> <span class="logo_name">ProgMan</span>/</a> <span>Projects</span> </p>
 
         </div>
         <div class="menu-items">
@@ -35,17 +35,18 @@
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dashboard</span>
                 </a></li>
-                <li><a href="#">
+                <!-- <li><a href="#">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Projects</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Tasks</span>
-                </a></li>
+                </a></li> -->
+                <li><div class="dropdown"><button  class="dropbtn">Projects</button><div class="dropdown-content">
+                    <div href="#" id="show-projects"></div>
+
+                </div></div>
+                </li>
                 <li><a href="#">
                     <i class="uil uil-chart"></i>
-                    <span class="link-name">Student</span>
+                    <span class="link-name">Teams</span>
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-thumbs-up"></i>
@@ -105,13 +106,15 @@
             <table>
                 <tbody>
                     <tr>
-                        <tr>
-                            <td><input type="text" id="new_subtask" placeholder="taskname"></td>
-                            <td><input type="text" id="new_description" placeholder="description"></td>
-                            <td><input type="text" id="new_assignedto" placeholder="assignedto"></td>
-                            <td><input type="text" id="new_duedate" placeholder="Due date"></td>
-                            <td><input type="button" class="add"  id="add_task" value="+ Add Task"></td>
-                        </tr>
+                        <td><input type="text" id="new_project" placeholder="Project name"></td>
+                        <!-- <td><input type="text" id="new_members" placeholder="Team Leader"></td> -->
+                        <td><input type="text" id="new_description" placeholder="Project Description"></td>
+                        <td><input type="text" id="new_related_files" placeholder="Related files"></td>
+
+
+                        <!-- <td><input type="text" id="new_assignedto" placeholder="assignedto"></td> -->
+    
+                        <td><input type="button" class="add"  id="add_project" value="+ Add Project"></td>
                     </tr>
                     </tbody>
                     </table>
@@ -120,23 +123,23 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Sub-Task ID</th>
-                        <th>Sub-Task name</th>
-                        <th>Sub-Description</th>
-                        <th>Assigned to..</th>
-                        <th>Due Date</th>
-                        <th>Status</th>
+                        <th>Project ID</th>
+                        <th>Project name</th>
+                        <th>Project Description</th>
+                        <!-- <th>Members</th> -->
+                        <th>Related files</th>
+ 
                         <th>options</th>
                        
                     </tr>
                 </thead>
-                <tbody id="teamleadsubtasks"></tbody>
+                <tbody id="projects"></tbody>
                 </table>
         </div>
     </section> 
         
     </section>
 
-    <script src="js/teamlead.js" type="module"></script>
+    <script src="js/adminaddproject.js" type="module" ></script>
 </body>
 </html>

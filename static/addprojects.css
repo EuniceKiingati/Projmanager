@@ -1,243 +1,5 @@
+/* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
-:root{
-    /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
-    --panel-color: #FFF;
-    --text-color: #000;
-    --black-light-color: #707070;
-    --border-color: #e6e5e5;
-    --toggle-color: #DDD;
-    --box1-color: #4DA3FF;
-    --box2-color: #FFE6AC;
-    --box3-color: #E7D1FC;
-    --title-icon-color: #fff;
-    
-    /* ====== Transition ====== */
-    --tran-05: all 0.5s ease;
-    --tran-03: all 0.3s ease;
-    --tran-03: all 0.2s ease;
-}
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .todo-container {
-    /* width: 100px; */
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    margin: 0 50px;
-  }
-
-  .status0 {
-    width: 25%;
-    background-color: #f3f3f3;
-    position: relative;
-    padding: 60px 1rem 0.5rem;
-  }
-  .status0:nth-child(even) {
-    background-color: #e9e9e96b;
-  }
-  .status0 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #343434;
-    
-    color: #f3f3f3;
-    margin: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
-  }
-  
-.status1 {
-    width: 25%;
-    background-color: #4DA3FF;
-    /* background-color: var(--status1-color); */
-    position: relative;
-    padding: 60px 1rem 0.5rem;
-  }
-  
-  .status1:nth-child(even) {
-    background-color: #4DA3FF;
-    /* background-color: #e9e9e96b; */
-  }
-  
-  .status1 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #343434;
-    color: #f3f3f3;
-    margin: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
-  }
-  .status2 {
-    width: 25%;
-    background-color: #f3f3f3;
-    position: relative;
-    padding: 60px 1rem 0.5rem;
-  }
-  .status2:nth-child(even) {
-    background-color:#FFE6AC;
-    background-color: #e9e9e96b;
-  }
-  .status2 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #343434;
-    color: #f3f3f3;
-    margin: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
-  }
-  .status3 {
-    width: 25%;
-    background-color: #f3f3f3;
-    position: relative;
-    padding: 60px 1rem 0.5rem;
-  }
-  .status3:nth-child(even) {
-    background-color: #E7D1FC;
-
-    /* background-color: #e9e9e96b; */
-  }
-  .status3 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #343434;
-    color: #f3f3f3;
-    margin: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
-  }
-  
-  #add_btn {
-    padding: 0.5rem 1rem;
-    background-color: #ccc;
-    outline: none;
-    border: none;
-    width: 100%;
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #add_btn:hover {
-    background-color: #aaa;
-  }
-  
-  .todo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    background-color: #fff;
-    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
-      rgba(15, 15, 15, 0.1) 0px 2px 4px;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-  }
-  
-  .todo .close {
-    position: absolute;
-    right: 1rem;
-    top: 0rem;
-    font-size: 2rem;
-    color: #ccc;
-    cursor: pointer;
-  }
-  
-  .todo .close:hover {
-    color: #343444;
-  }
-  
-  /* modal */
-  
-  .close-modal {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-  }
-  
-  .modal {
-    width: 450px;
-    /* position: fixed; */
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: top 0.3s ease-in-out;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    z-index: 2;
-    background-color: #fff;
-    position: relative;
-    margin-top: 10%;
-  }
-  
-  .modal.active {
-    top: 15%;
-  }
-  
-  .modal .modalheader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  
-  .modal .modalbody {
-    padding: 0.75rem;
-  }
-  
-  #overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  #overlay.active {
-    display: block;
-  }
-  
-  #todo_input,
-  #todo_submit {
-    padding: 0.5rem 1rem;
-    width: 100%;
-    margin: 0.25rem;
-  }
-  
-  #todo_submit {
-    background-color:blue;
-    color: #f3f3f3;
-    font-size: 1.25rem;
-    border: none;
-  }
-
-
-  /* navbar style */
-  /* ===== Google Font Import - Poppins ===== */
 *{
     margin: 0;
     padding: 0;
@@ -264,7 +26,10 @@
     --tran-03: all 0.2s ease;
 }
 
-
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
 body.dark{
     --primary-color: #3A3B3C;
     --panel-color: #242526;
@@ -691,3 +456,128 @@ nav.close ~ .dashboard .top{
         width: 100%;
     }
 }
+/* tablecss */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .header_fixed {
+  
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+  }
+  
+  .header_fixed thead th {
+    position: relative;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 15px;
+  }
+  .table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px;
+    background-color: #244d4d;
+  }
+  .table_header p{
+    color: #000;
+  }
+  th,
+  td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  td img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #e6e7e8;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #edeef1;
+  }
+  
+  tr:hover td {
+    color: #44b478;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  
+  td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .save{
+        display: none;
+    }
+
+/* dropdwon button */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}

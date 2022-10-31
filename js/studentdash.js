@@ -37,14 +37,6 @@ window.addEventListener("load", async(e)=>{
     teamElement.innerHTML = queryTeams.size
     }
     )
-window.addEventListener("load", async(e)=>{
-        var projectElement = document.getElementById("projects-count")
-        
-          const queryProjects = await getDocs(collection(db, "Projects"));
-        projectElement.innerHTML = queryProjects.size
-        }
-        )
-        
 
 
 
